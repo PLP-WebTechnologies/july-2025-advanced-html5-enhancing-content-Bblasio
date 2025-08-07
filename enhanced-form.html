@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Content & Form</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Learning Hub</h1>
+        <p>Explore our educational resources and register for our courses below.</p>
+    </header>
+
+    <main>
+        <!-- Lists Section -->
+        <section>
+            <h2>Our Course Offerings</h2>
+            <h3>Core Subjects</h3>
+            <ul>
+                <li>Web Development</li>
+                <li>Data Science</li>
+                <li>Graphic Design</li>
+                <li>Cybersecurity</li>
+            </ul>
+            <h3>Upcoming Workshops</h3>
+            <ol>
+                <li>Introduction to HTML5 - Nov 10, 2025</li>
+                <li>Python for Beginners - Nov 15, 2025</li>
+                <li>Advanced CSS Techniques - Nov 20, 2025</li>
+            </ol>
+        </section>
+
+        <!-- Table Section -->
+        <section>
+            <h2>Course Schedule</h2>
+            <table>
+                <caption>Weekly Course Timetable</caption>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Course</th>
+                        <th>Time</th>
+                        <th>Instructor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Web Development</td>
+                        <td>10:00 AM - 12:00 PM</td>
+                        <td>Blasio Ochieng</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Data Science</td>
+                        <td>2:00 PM - 4:00 PM</td>
+                        <td>Jurgen Omondi</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Cybersecurity</td>
+                        <td>1:00 PM - 3:00 PM</td>
+                        <td>Victor Odhiambo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Media Section -->
+        <section>
+            <h2>Featured Content</h2>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655" alt="Students collaborating in a classroom" width="400" height="200">
+                <figcaption>Our vibrant learning community in action.</figcaption>
+            </figure>
+            <figure>
+                <video controls width="400" height="225">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Watch our latest course introduction video.</figcaption>
+            </figure>
+            <figure>
+                <audio controls>
+                    <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Tours/Enthusiast/Tours_-_01_-_Enthusiast.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <figcaption>Listen to our motivational learning podcast.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Form Section -->
+        <section>
+            <h2>Course Registration Form</h2>
+            <form action="/submit" method="post" novalidate>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required minlength="2" placeholder="Enter your full name" autocomplete="name">
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email" autocomplete="email">
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" autocomplete="tel">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Course Details</legend>
+                    <label for="course">Select Course:</label>
+                    <select id="course" name="course" required>
+                        <option value="">-- Select a Course --</option>
+                        <option value="web-dev">Web Development</option>
+                        <option value="data-science">Data Science</option>
+                        <option value="graphic-design">Graphic Design</option>
+                        <option value="cybersecurity">Cybersecurity</option>
+                    </select>
+
+                    <label for="start-date">Preferred Start Date:</label>
+                    <input type="date" id="start-date" name="start-date" required min="2025-08-08">
+
+                    <label for="experience">Years of Experience:</label>
+                    <input type="number" id="experience" name="experience" min="0" max="50" placeholder="Enter years of experience" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label for="comments">Comments or Questions:</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Any additional information or questions"></textarea>
+
+                    <label for="newsletter">Subscribe to Newsletter:</label>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                </fieldset>
+
+                <input type="submit" value="Register Now">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Learning Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
